@@ -28,7 +28,7 @@ export default function CadastrarAluno() {
 
 	const onSubmit = async (data: FormData) => {
 		try {
-			await api.post("/aluno", data);
+			await api.post("/alunos", data);
 			alert("Aluno cadastrado com sucesso!");
 			reset();
 		} catch (err) {
